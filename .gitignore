@@ -5,6 +5,10 @@ __pycache__/
 .ipynb_checkpoints/
 
 
+# do not consider csv files
+*.csv
+
+
 # C extensions
 *.so
 
