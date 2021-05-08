@@ -19,16 +19,25 @@
         </div>
 
         <div style="text-align:center;width: 100%">
-            <span style="font-size: 30px; text-align:center;background-color:grey;">Tags suggérés</span>
+            <span style="font-size: 30px; text-align:center;background-color:grey;">Tags suggérés (supervisé)</span>
             <div style="text-align:center;">            
                 <!--span name="result" style="font-size: 24px; margin-top: 2px;">{{result}}</span-->       
                 <ul style="font-size: 24px; margin-top: 2px;list-style-type: none;">
-                {%for i in range(0, len)%}
-                    <li>{{result[i]}}</li>
+                {%for i in range(0, len_supervised)%}
+                    <li>{{result_supervised[i]}}</li>
                 {%endfor%}                
                 </ul>
-                
-                
+            </div>
+        </div>
+        <div style="text-align:center;width: 100%">
+            <span style="font-size: 30px; text-align:center;background-color:grey;">Tags suggérés (non supervisé)</span>
+            <div style="text-align:center;">            
+                <!--span name="result" style="font-size: 24px; margin-top: 2px;">{{result}}</span-->       
+                <ul style="font-size: 24px; margin-top: 2px;list-style-type: none;">
+                {%for i in range(0, len_unsupervised)%}
+                    <li>{{result_unsupervised[i]}}</li>
+                {%endfor%}                
+                </ul>
             </div>
         </div>
 

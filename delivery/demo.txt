@@ -1,0 +1,7 @@
+Hello, I am developing a new application in django with html and javascript and I need to create a new table in a sql-server database. Can you tell me how to do it ? Thanks !
+
+I run a python script and I have a memory problem, it says it is a language problem. Can you help me ?
+
+I have a java class with a function defined in it. How can I run this function from command line ?
+
+I am developing a react native app and I have a problem of compatibility on iphone. Should I turn to a javascript application ?
