@@ -69,12 +69,18 @@ def prediction():
     post = request_form['post']
     post_str = str(post)
 
-    tags_str = handler.prediction(post_str)
-    tags = []
-    for t in tags_str.split():
-        tags.append(t)
+    tags_supervised_str = handler.supervised_prediction(post_str)
+    tags_supervised = []
+    for t in tags_supervised_str.split():
+        tags_supervised.append(t)
 
-    return render_template("result.html", post=post_str, result=tags, len=len(tags))
+    tags_unsupervised_str = handler.unsupervised_prediction(post_str)
+    tags_unsupervised = []
+    for t in tags_unsupervised_str.split():
+        tags_unsupervised.append(t)
+
+        
+    return render_template("result.html", post=post_str, result_supervised=tags_supervised, len_supervised=len(tags_supervised), result_unsupervised=tags_unsupervised, len_unsupervised=len(tags_unsupervised))
 
 
 """
